@@ -7,7 +7,7 @@ interface Props extends TextProps {
     type?: TextType;
 }
 
-const ThemedText = ({ className, type, ...rest }: Props) => {
+const CustomThemedText = ({ className, type, ...rest }: Props) => {
     //  className="mt-10 text-3xl text-light-text dark:text-dark-text"
     return (
         <Text
@@ -24,4 +24,4 @@ const ThemedText = ({ className, type, ...rest }: Props) => {
         />
     );
 };
-export default ThemedText;
+export default CustomThemedText;

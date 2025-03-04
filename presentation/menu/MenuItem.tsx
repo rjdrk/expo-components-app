@@ -1,7 +1,7 @@
 import { View, Pressable } from 'react-native'
 import React from 'react'
 import { Href, router } from 'expo-router';
-import ThemedText from '../shared/ThemedText';
+import CustomThemedText from '../shared/CustomThemedText';
 import { Ionicons } from '@expo/vector-icons';
 import { useThemeColor } from '@/hooks/useThemeColor';
 
@@ -46,7 +46,7 @@ const MenuItem = ({
                     color={primaryColor}
                     className="mr-5"
                 />
-                <ThemedText type="h2"> {title} </ThemedText>
+                <CustomThemedText type="h2"> {title} </CustomThemedText>
             </View>
         </Pressable>
     )

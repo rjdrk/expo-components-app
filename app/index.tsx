@@ -1,11 +1,11 @@
 import { animationMenuRoutes, menuRoutes, uiMenuRoutes } from '@/constants/Routes';
 import MenuItem from '@/presentation/menu/MenuItem';
-import ThemedView from '@/presentation/shared/ThemedView';
+import CustomThemedView from '@/presentation/shared/CustomThemedView';
 import { View } from 'react-native';
 
 const ComponentsApp = () => {
   return (
-    <ThemedView margin>
+    <CustomThemedView margin>
       {
         animationMenuRoutes.map((route, index) => (
           <MenuItem
@@ -45,7 +45,7 @@ const ComponentsApp = () => {
           />
         ))
       }
-    </ThemedView>
+    </CustomThemedView>
   );
 };
 export default ComponentsApp;

@@ -1,16 +1,16 @@
-import { View } from 'react-native'
+import { View, ViewProps } from 'react-native'
 import React from 'react'
 import { useThemeColor } from '@/hooks/useThemeColor';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-interface Props {
+interface Props extends ViewProps {
     className?: string;
     margin?: boolean;
     safe?: boolean;
     bgColor?: string;
 }
 
-const ThemedView = ({
+const CustomThemedView = ({
     style,
     className,
     margin = false,
@@ -40,4 +40,4 @@ const ThemedView = ({
     )
 }
 
-export default ThemedView
+export default CustomThemedView
